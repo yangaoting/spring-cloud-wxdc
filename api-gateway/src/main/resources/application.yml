@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    host: 47.106.232.229
+  redis:
+    host: 47.106.232.229
+    port: 6379

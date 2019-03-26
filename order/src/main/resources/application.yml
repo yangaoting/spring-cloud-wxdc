@@ -1,0 +1,24 @@
+spring:
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    host: 47.106.232.229
+  redis:
+    host: 47.106.232.229
+    port: 6379
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://47.106.232.229:9411/
+    sender:
+      type: web
+    compression:
+      enabled: true
+    locator:
+      discovery:
+        enabled: true
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug

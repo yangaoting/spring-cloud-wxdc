@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yangaoting/config-repo
+          username: yangaoting
+          password: ygt123456
+          basedir: D:\worksapce\springcloud\config-repo
+  rabbitmq:
+    host: 47.106.232.229
+    username: guest
+    password: guest
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8083
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
